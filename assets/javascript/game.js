@@ -34,60 +34,64 @@ function guess() {
         }
     }
     // ---- see example from printed on HTML page on "Guesses so far" section: k, d, m, g, j, c, n, v, p, e,
-    // I got this to list all of the pressed keys but when I had added multiple events to do this, it slowed down the results. There's gotta be a better way to do this.. not sure if it's my internet connections but it's probably my coding :(
+    // I got this to list all of the pressed keys but when I had added multiple events to do this, it slowed down the results. There's gotta be a better way to do this.. not sure if it's my internet connections but it's probably my coding :( So I have commented it out since it's flowing correctly/very slow.
+
     document.onkeypress = function (event) {
         guessedLetter1 = event.key;
-        document.onkeypress = function (event) {
-            guessedLetter2 = event.key;
-            document.onkeypress = function (event) {
-                guessedLetter3 = event.key;
-                document.onkeypress = function (event) {
-                    guessedLetter4 = event.key;
-                    document.onkeypress = function (event) {
-                        guessedLetter5 = event.key;
-                        document.onkeypress = function (event) {
-                            guessedLetter6 = event.key;
-                            document.onkeypress = function (event) {
-                                guessedLetter7 = event.key;
-                                document.onkeypress = function (event) {
-                                    guessedLetter8 = event.key;
-                                    document.onkeypress = function (event) {
-                                        guessedLetter9 = event.key;
-                                        document.onkeypress = function (event) {
-                                            guessedLetter10 = event.key;
+        // document.onkeypress = function (event) {
+        //     guessedLetter2 = event.key;
+        //     document.onkeypress = function (event) {
+        //         guessedLetter3 = event.key;
+        //         document.onkeypress = function (event) {
+        //             guessedLetter4 = event.key;
+        //             document.onkeypress = function (event) {
+        //                 guessedLetter5 = event.key;
+        //                 document.onkeypress = function (event) {
+        //                     guessedLetter6 = event.key;
+        //                     document.onkeypress = function (event) {
+        //                         guessedLetter7 = event.key;
+        //                         document.onkeypress = function (event) {
+        //                             guessedLetter8 = event.key;
+        //                             document.onkeypress = function (event) {
+        //                                 guessedLetter9 = event.key;
+        //                                 document.onkeypress = function (event) {
+        //                                     guessedLetter10 = event.key;
 
-                                            // print on HTML
-                                            document.getElementById('result').innerHTML = userCounter;
-                                            document.getElementById('lose').innerHTML = compCounter;
-                                            document.getElementById('Guessed').innerHTML = guessLeft;
-                                            document.getElementById('pressedkey').innerHTML = guessedLetter1 + ", " + guessedLetter2 + ", " + guessedLetter3 + ", " + guessedLetter4 + ", " + guessedLetter5 + ", " + guessedLetter6 + ", " + guessedLetter7 + ", " + guessedLetter8 + ", "
-                                                + guessedLetter9 + ", " + guessedLetter10;
+        // print on HTML
+        document.getElementById('result').innerHTML = userCounter;
+        document.getElementById('lose').innerHTML = compCounter;
+        document.getElementById('Guessed').innerHTML = guessLeft;
+        document.getElementById('pressedkey').innerHTML = guessedLetter1 + ", "
 
 
-                                        };
+        // guessedLetter2 + ", " + guessedLetter3 + ", " + guessedLetter4 + ", " + guessedLetter5 + ", " + guessedLetter6 + ", " + guessedLetter7 + ", " + guessedLetter8 + ", "
+        //     + guessedLetter9 + ", " + guessedLetter10;
 
-                                    };
-
-                                };
-
-                            };
-
-                        };
-                    };
-                };
-
-            };
-
-        };
 
     };
+
+    // };
+
+    //                             };
+
+    //                         };
+
+    //                     };
+    //                 };
+    //             };
+
+    //         };
+
+    //     };
+
+    // };
 
 }
 guess();
 
 // The game is working fine except it's not auto restarting without refreshing the page. I couldn't figure out how to allign the results to my category list.. 
 /*
-****my code***
+****My code***
 Wins:
 1
 
